@@ -1,0 +1,87 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF3CC"
+
+    app:guidelineUseRtl="false"
+    tools:context=".results">
+
+
+    <Button
+        android:id="@+id/ping"
+        android:layout_width="136dp"
+        android:layout_height="54dp"
+        android:text="Main Menu"
+        android:onClick="backToMenu"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        app:backgroundTint="@color/white"
+        app:iconTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/backResults"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:onClick="backToPinger"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        app:backgroundTint="@color/white"
+        app:iconTint="@color/black"
+        app:layout_constraintHorizontal_bias="0.5"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.75" />
+
+    <TextView
+        android:id="@+id/resultsText"
+        android:layout_width="375dp"
+        android:layout_height="233dp"
+        android:layout_margin="20dp"
+
+
+        android:background="#FFFFFF"
+        android:gravity="left"
+
+        android:text="Results..."
+        android:textColor="#000000"
+
+
+        android:textSize="11sp"
+        app:emojiCompatEnabled="false"
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.126" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VENKATNARAYAN GNANAGURUPARAN \n B01013037"
+        android:textAlignment="center"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.95" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
